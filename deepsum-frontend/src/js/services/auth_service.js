@@ -8,10 +8,7 @@ async function signInWithProvider(provider) {
       throw new Error("Provider not supported");
     }
 
-    const redirectTo =
-      process.env.NODE_ENV === "production"
-        ? `${window.location.origin}/auth_callback.html`
-        : `https://deepsum.vercel.app/auth/callback`;
+    const redirectTo = `https://deepsum.vercel.app/auth/callback`;
 
     const { data, error } = await supabase.auth.signInWithOAuth({
       provider,
