@@ -5,7 +5,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
-    "dev": "webpack serve --config ./webpack.config.js --hot"
+    "build:analyze": "webpack --mode production --analyze",
+    "dev": "webpack serve --config ./webpack.config.js --hot",
+    "start": "npm run build && npx serve dist",
+    "preview": "npx serve dist"
   },
   "author": "",
   "license": "ISC",
@@ -21,8 +24,10 @@
     "copy-webpack-plugin": "^13.0.0",
     "css-loader": "^7.1.2",
     "html-webpack-plugin": "^5.6.3",
+    "serve": "^14.2.1",
     "style-loader": "^4.0.0",
     "webpack": "^5.99.9",
+    "webpack-bundle-analyzer": "^4.10.1",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.2"
   }

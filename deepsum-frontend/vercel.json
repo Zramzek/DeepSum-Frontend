@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    { "source": "/signup", "destination": "/signup.html" },
+    { "source": "/homepage", "destination": "/homepage.html" },
+    { "source": "/auth/(.*)", "destination": "/auth_callback.html" },
+    { "source": "/(.*)", "destination": "/signup.html" }
+  ]
+}
