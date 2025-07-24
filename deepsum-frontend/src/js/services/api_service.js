@@ -1,7 +1,7 @@
 import { supabase } from "../supabase_client";
 
 // const API_BASE_URL = "https://deepsum.space";
-const API_BASE_URL = "https://c32cf60794d2.ngrok-free.app";
+const API_BASE_URL = "https://221143314ff1.ngrok-free.app";
 
 async function getCurrentUser() {
   const {
